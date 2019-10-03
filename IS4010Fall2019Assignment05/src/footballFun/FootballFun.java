@@ -1,8 +1,10 @@
 /*
- * IS4010 Fal 2019
+ * IS4010 Fall 2019
  * Assignment 05
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * FootballFun
+ * Due 10/03/2019
+ * Ryan Nance
+ * nancera@mail.uc.edu
  */
 package footballFun;
 
@@ -25,7 +27,19 @@ public class FootballFun {
 			System.out.println("At least one test failed");
 		}
 	}
+	/**
+	 * @param score
+	 * @return if all statements are true, returns "all tests passed"
+	 */
 	public static String translateScore (int score) {
+		if (score ==2) {return "safety";}//if integer equals 2, string should return "safety"
+		if(score == 3) {return "field goal";} //if integer equals 3, string should return "field goal"
+		if(score == 6) {return "touchdown";} //if integer equals 6, string should return "Touchdown"
+		if(score == 7) {return "touchdown and extra point";}//if integer equals 7, string should return "touchdown and extra point"
+		if(score == 8) {return "touchdown and 2-point conversion";}//if integer equals 8, string should return "touchdown and 2-point conversion"
+		if(score == 10) {return "you must be playing Quidditch ";} //if integer equals 10, string should return "you must be playing Quidditch"
+		if (score <0) {return "";}//if integer is less than 0, string should return ""
+		if (score ==1) {return "invalid";}//if integer equals 1, string should return "invalid"
 		return "";
 	}
 }
